@@ -2,6 +2,7 @@
   "name": "table",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Dimakov9.github.io/TableComponent",
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deply": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
