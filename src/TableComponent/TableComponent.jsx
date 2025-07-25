@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { Table, Modal, Button, Form, Input, DatePicker } from "antd";
 import dayjs from "dayjs";
-import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
+import {
+  EditOutlined,
+  DeleteOutlined,
+  ExclamationCircleOutlined,
+} from "@ant-design/icons";
 import "./styles.css";
 
 const TableComponent = () => {
@@ -48,15 +52,7 @@ const TableComponent = () => {
 
   // Функция для удаления записи
   const handleDelete = (key) => {
-    Modal.confirm({
-      title: "Вы действительно хотите удалить запись?",
-      okText: "Да",
-      okType: "danger",
-      cancelText: "Нет",
-      onOk() {
-        setData(data.filter((item) => item.key !== key)); // Удаляем запись по ключу
-      },
-    });
+    setData(data.filter((item) => item.key !== key)); // Удаляем запись по ключу
   };
 
   // Функция для обработки сохранения
