@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 16px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}

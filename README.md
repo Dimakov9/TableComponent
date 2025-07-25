@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+Разработать компонент таблицы, с несколькими столбцами.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Столбцы должны включать в себя имя, дату, числовое значение, а так же колонку с действиями.
 
-## Available Scripts
+Над таблицей должна быть кнопка "Добавить", вызывающая модальное окно с набором полей соответствующих столбцам в таблице.
 
-In the project directory, you can run:
+После заполнения и валидации данных полей в таблицу должна добавляться строка с ними.
 
-### `npm start`
+В ячейке колонки "Действия" должны быть кнопки "удалить" и "редактировать" (можете обозначать их иконками). Нажатие на кнопку "редактировать" вновь вызывает модальное окно, заполненное данными из строки и при изменении и подтверждении в модальном окне меняет данные в соответствующей строке.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Нажатие на кнопку "удалить" - убирает данную строку из таблицы.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Для выполнения тестового задания необходимо выполнить все требования выше, при этом есть дополнительные пожелания, которые будут плюсом при рассмотрении кандидатов: -
 
-### `npm test`
+Использовать библиотеку AntD, реализовать с её помощью сортировку по всем колонкам, которая будет правильно работать в зависимости от типа значения в колонке
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Если решите не использовать AntD, можете поработать над собственной версткой, добавить плавных анимаций для модального окна, подумать над адаптивом.
 
-### `npm run build`
+-Реализовать поиск по всем ячейкам таблицы.
+Инпут для поиска расположить над таблицей.
+При выполнении задания разрешается пользоваться библиотекой AntD (при условии выполнения дополнительных требований), а так же вспомогательных библиотек по типу lodash.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Время на выполнение тестового задания - 3 дня с момента получения (4 при выполнении дополнительных требований) Результат выполнения задания выложить на github. Оформляем публикацию рабочей страницы на github pages.
